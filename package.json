@@ -33,6 +33,7 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.49",
     "@babel/core": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
     "standard": "^11.0.1"
   },
   "peerDependencies": {
