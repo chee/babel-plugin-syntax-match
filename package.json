@@ -7,8 +7,7 @@
     "build": "babel src -d lib -s",
     "fix": "standard --fix",
     "lint": "standard",
-    "test": "node tests/yes.js",
-    "prepublish": "npm run lint && npm run build && npm run test",
+    "prepublish": "npm run lint && npm run build",
     "prepush": "npm run prepublish",
     "precommit": "npm run lint"
   },
@@ -26,20 +25,18 @@
   ],
   "files": [
     "license",
-    "lib/",
     "src/"
   ],
   "dependencies": {
-    "babylon": "6.13.0"
+    "@babel/helper-plugin-utils": "^7.0.0-beta.49"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.0",
-    "babel-core": "^6.24.0",
-    "babel-eslint": "7.1.1",
-    "babel-preset-env": "^1.7.0",
-    "husky": "0.13.2",
-    "standard": "^11.0.1",
-    "tape": "^4.9.0"
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "standard": "^11.0.1"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-beta.49"
   },
   "repository": {
     "type": "git",
